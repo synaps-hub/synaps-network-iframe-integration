@@ -31,6 +31,10 @@
         </div>
     </footer>
 </body>
+<script>
+    window.addEventListener('message', ({data}) => {
+       if (['finish'].includes(data.type)) {console.log('DO SOMETHING')}})
+</script>
 
 </html>
 
