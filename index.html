@@ -14,28 +14,21 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
 </head>
 
-<body class="text-center">
-    <iframe id="iframeExample" title="Iframe Example" width="700"
-    height="1000"
-    allow="microphone; camera; midi; encrypted-media;"
-    allowtransparency="true"
-    allowfullscreen="true"
-    border="0"
-    frameborder="none"
-    resize="none"
-        src="https://holoride.synaps.me?token=YOUR_TOKEN">
+<body class="text-center" style="padding-top: 100px;">
+    <iframe id="iframeExample" title="Iframe Example" width="500" height="700"
+        allow="microphone; camera; midi; encrypted-media;" allowtransparency="true" allowfullscreen="true" border="0"
+        frameborder="none" resize="none" src="https://bhnetwork.synaps.me">
     </iframe>
     <footer class="footer">
         <div class="container">
-            <span class="text-muted">&copy; 2021 Synaps Limited</span>
+            <span class="text-muted">&copy; 2022 Synaps Limited</span>
         </div>
     </footer>
 </body>
 <script>
-    window.addEventListener('message', ({data}) => {
-       if (['finish'].includes(data.type)) {console.log('DO SOMETHING')}})
+    window.addEventListener('message', ({ data }) => {
+        if (['finish'].includes(data.type)) { console.log('DO SOMETHING') }
+    })
 </script>
 
 </html>
-
-
